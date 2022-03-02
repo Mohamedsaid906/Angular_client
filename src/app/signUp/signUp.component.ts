@@ -11,7 +11,7 @@ import {cachingDisabled} from "@angular-devkit/build-angular/src/utils/environme
 })
 export class SignUpComponent implements OnInit {
 
-
+erreur = 0 ;
   isRegistered = false;
   option = '';
   errorMessage = '';

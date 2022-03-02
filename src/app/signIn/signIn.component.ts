@@ -19,7 +19,8 @@ export class SignInComponent implements OnInit {
 
   myForm!: FormGroup
 
-  constructor(private fb: FormBuilder, private authService: AuthService, private router: Router, private token: TokenService) {
+  constructor(private fb: FormBuilder, private authService: AuthService,
+     private router: Router, private token: TokenService) {
   }
 
 
@@ -60,7 +61,7 @@ export class SignInComponent implements OnInit {
         this.isLoginFailed = false;
         this.isLoggedIn = true;
         this.roles = this.token.getAuthorities();
-        this.router.navigateByUrl('home');
+        this.router.navigateByUrl('session');
 
 
       },

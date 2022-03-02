@@ -1,6 +1,5 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import {SignUpInfo} from "../model/sign-up-info/signUpInfo.module";
 import { Injectable } from '@angular/core';
 
 
@@ -16,8 +15,8 @@ const httpOptions = {
 })
 export class AuthService {
 
-  private signupUrl = 'http://localhost:8009/auth/signUp';
-  private loginUrl =  'http://localhost:8009/auth/signIn';
+  private signupUrl = 'http://localhost:8081/users/sigup';
+  private loginUrl =  'http://localhost:8081/users/login';
 
 
   constructor(private http: HttpClient) {
